@@ -27,9 +27,9 @@ services:
     depends_on:
     - catalogue
     - redis
-  # mysql:
-  #   image: joindevops/mysql:v1
-  #   container_name: mysql
+  mysql:
+    image: joindevops/mysql:v1
+    container_name: mysql
   shipping:
     image: joindevops/shipping:v1
     container_name: shipping
